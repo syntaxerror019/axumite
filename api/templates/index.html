@@ -1,94 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ancient Axumite Empires and History</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Axum</title>
+ 
 </head>
-  <style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    <style>
+        /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #f2f2f2;
-    padding: 10px;
+  background-color: #333;
+  padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: #333;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-main {
-    padding: 20px;
+nav ul li a:hover {
+  color: #ccc;
 }
 
+/* Hero section */
+.hero {
+  background-image: url("hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.feature {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
-  </style>
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+    </style>
 <body>
-    <header>
-        <h1>Ancient Axumite Empires and History</h1>
-    </header>
-
+  <header>
     <nav>
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#emperors">Emperors</a></li>
-            <li><a href="#artifacts">Artifacts</a></li>
-            <li><a href="#architecture">Architecture</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>Write a brief overview of the Axumite empires and their significance in history.</p>
-        </section>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Ancient Axum</h1>
+      <p>Discover the rich history and culture of the Axumite Empire.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
 
-        <section id="emperors">
-            <h2>Emperors</h2>
-            <p>Provide information about prominent Axumite emperors and their accomplishments.</p>
-        </section>
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-history"></i>
+      <h2>Historical Landmarks</h2>
+      <p>Explore the ancient monuments and ruins of Axum.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-book"></i>
+      <h2>Archaeological Discoveries</h2>
+      <p>Uncover the mysteries of the Axumite civilization.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-music"></i>
+      <h2>Cultural Festivals</h2>
+      <p>Experience vibrant celebrations and traditional music.</p>
+    </div>
+  </section>
 
-        <section id="artifacts">
-            <h2>Artifacts</h2>
-            <p>Showcase images and descriptions of significant artifacts from the Axumite era.</p>
-        </section>
+  <footer>
+    <p>&copy; 2024 Ancient Axum. All rights reserved.</p>
+  </footer>
 
-        <section id="architecture">
-            <h2>Architecture</h2>
-            <p>Discuss the unique architectural styles and structures found in Axumite cities.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Your Name</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
