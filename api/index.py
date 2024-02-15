@@ -14,4 +14,8 @@ def econ():
 @app.route('/trade')
 def trad():
     return render_template("trade.html")
+
+@app.route('/geography')
+def home():
+    return render_template("geo.html")
     
