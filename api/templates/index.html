@@ -82,7 +82,21 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: #777676;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #5f5f5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+  background-color: #191919;
 }
 
 /* Features section */
@@ -93,6 +107,7 @@ nav ul li a:hover {
 }
 
 .feature {
+  width: 2000px;
   text-align: center;
   margin: 0 20px;
 }
@@ -109,6 +124,7 @@ nav ul li a:hover {
 
 .feature p {
   font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Footer */
@@ -119,6 +135,10 @@ footer {
   color: #fff;
 }
 
+.space {
+    height: 80vh; /* just to take up space lmao kekw mdrrr jhlkhlkghldfs */
+}
+
 /* Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
@@ -127,11 +147,12 @@ footer {
   <header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/economy">Economy</a></li>
+        <li><a href="/geography">Geography</a></li>
+        <li><a href="/trade">Trade</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+
       </ul>
     </nav>
   </header>
@@ -141,24 +162,30 @@ footer {
       <h1>Welcome to Ancient Axum</h1>
       <p>Discover the rich history and culture of the Axumite Empire.</p>
       <br>
-      <a href="#" class="btn">Learn More</a>
+      <a href="#" id="scroll" class="btn">Learn More</a>
     </div>
   </section>
-<br><br><br><br><br><br><br>><br><br><br><br><br><br>
-  <section class="features">
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+<div class="space"></div>
+  <section class="features" id="target">
     <div class="feature">
       <i class="fas fa-history"></i>
-      <h2>Historical Landmarks</h2>
-      <p>Explore the ancient monuments and ruins of Axum.</p>
+      <h2>Trade and Economy</h2>
+     <b>――</b>
+      <p>Ancient Axum, located in modern-day Ethiopia, was a prosperous civilization known for its strategic location along trade routes connecting Africa, Arabia, and the Mediterranean. The economy of Axum was primarily based on trade, facilitated by its access to the Red Sea and control over key ports such as Adulis. Axum traded goods such as ivory, gold, frankincense, and agricultural products with Egypt, Arabia, India, and the Roman Empire. The kingdom also minted its own currency, which further facilitated trade. Additionally, Axum's economy was supported by agriculture, with crops like millet, teff, and barley being cultivated in the region. The kingdom's wealth and trade networks played a significant role in its political and cultural influence in the ancient world.</p>
+      <br>
+      <a href="#" class="btn-small">Explore the Trading Economy</a>
     </div>
     <div class="feature">
       <i class="fas fa-book"></i>
       <h2>Archaeological Discoveries</h2>
+      <b>――</b>
       <p>Uncover the mysteries of the Axumite civilization.</p>
     </div>
     <div class="feature">
       <i class="fas fa-music"></i>
       <h2>Cultural Festivals</h2>
+      <b>――</b>
       <p>Experience vibrant celebrations and traditional music.</p>
     </div>
   </section>
@@ -167,6 +194,12 @@ footer {
     <p>&copy; 2024 Ancient Axum. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
+
+<script>
+document.getElementById('scroll').addEventListener('click', function() {
+  document.getElementById('target').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+
 </html>
