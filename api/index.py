@@ -20,5 +20,5 @@ def geo():
     return render_template("geo.html")
 
 @app.route('/gallery')
-def gallery():
+def gallery_skjdhfl():
     return render_template("gallery.html")
