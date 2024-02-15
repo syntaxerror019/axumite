@@ -16,6 +16,6 @@ def trad():
     return render_template("trade.html")
 
 @app.route('/geography')
-def home():
+def geo():
     return render_template("geo.html")
     
