@@ -7,3 +7,11 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route('/economy')
+def econ():
+    return render_template("economy.html")
+
+@app.route('/trade')
+def trad():
+    return render_template("trade.html")
+    
