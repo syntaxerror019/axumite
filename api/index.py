@@ -3,10 +3,10 @@ from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
-@app.route('/<url>')
+@app.route('/<path:url>')
 def home(url):
     if url is not None:
-        return redirect("https://github.com/syntaxerror019/axumite")
+        return redirect(url)
     return render_template("index.html")
 
 @app.route('/economy')
