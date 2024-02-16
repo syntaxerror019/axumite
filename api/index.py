@@ -3,10 +3,8 @@ from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
-@app.route('/<path:url>')
-def home(url):
-    if url is not None:
-        return redirect(url)
+@app.route('/')
+def home():
     return render_template("index.html")
 
 @app.route('/economy')
